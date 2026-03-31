@@ -24,7 +24,7 @@ namespace Calculadora
 		{
 			if (b == 0)
 			{
-				throw new DivideByZeroException("No se puede dividir por cero.");
+			return double.NaN;
 			}
 			return a / b;
 		}

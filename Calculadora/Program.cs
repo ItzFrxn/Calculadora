@@ -11,10 +11,12 @@ namespace Calculadora
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Suma(5, 3));
-            Console.WriteLine(Resta(5, 3));
-            Console.WriteLine(Multiplicacion(5, 3));
-            Console.WriteLine(Division(5, 3));
+            Console.Title = "Calculadora";
+            Console.WriteLine("=========================");
+            Console.WriteLine("   Calculadora Basica");
+            Console.WriteLine("=========================");
+            Console.WriteLine(" 1) Suma\n 2) Resta\n 3) Multiplicacion\n 4) Division\n 5) Opciones avanzadas\n x) Salir");
+            Console.WriteLine("=========================");
         }
     }
 }
