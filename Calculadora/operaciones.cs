@@ -28,5 +28,14 @@ namespace Calculadora
 			}
 			return a / b;
 		}
+		public static double Potencia(double a, double b)
+		{
+            double po = 1;
+            for (int i = 0; i < b; i++)
+            {
+                po = po * a;
+            }
+			return po;
+        }
 	}
 }

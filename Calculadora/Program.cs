@@ -17,7 +17,7 @@ namespace Calculadora
             {
                 Console.Title = "Calculadora";
                 // Menu principal
-                Inicio(" 1) Suma\n 2) Resta\n 3) Multiplicacion\n 4) Division\n 0) Salir");
+                Inicio(" 1) Suma\n 2) Resta\n 3) Multiplicacion\n 4) Division\n 5) Potencia\n 0) Salir");
                 Console.Write(" Opcion: ");
                 int opcion = Convert.ToInt32(Console.ReadLine());
                 Console.Clear();
@@ -70,6 +70,13 @@ namespace Calculadora
                         Titulo();
                         Console.WriteLine($" Division: {g} / {h} = {Division(g, h)} ");
                         break;
+                    case 5:
+                        Console.Write(" Base: ");
+                        double bs = Convert.ToDouble(Console.ReadLine());
+                        Console.Write(" Exponente: ");
+                        double ex = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine($" R: {Potencia(bs, ex)}");
+                        break ;
                     case 0:
                         Console.Clear();
                         Salir();
