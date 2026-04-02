@@ -20,12 +20,11 @@ namespace Calculadora
             Console.WriteLine(text);
             Console.WriteLine("=========================");
         }
-        public static int Opcion()
+        public static void Salir()
         {
-            Console.Write("Opcion: ");
-            int opcion = Convert.ToInt32(Console.ReadLine());
-            Console.Clear();
-            return opcion;
+            Titulo();
+            Console.WriteLine(" Finalizado.");
+            return;
         }
     }
 }
